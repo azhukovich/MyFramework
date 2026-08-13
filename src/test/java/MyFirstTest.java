@@ -10,7 +10,7 @@ public class MyFirstTest {
                 .when()
                 .get("/posts/1")
                 .then()
-                .statusCode(201)
+                .statusCode(200)
                 .body("userId", equalTo(1))
                 .body("title",notNullValue());
     }
